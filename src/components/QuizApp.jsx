@@ -41,7 +41,7 @@ const OptionButton = styled.button`
 
   &:hover { 
     background-color: #0056b3; 
-    transform: scale(1.05); .
+    transform: scale(1.05);
   }
 
   &:active { 
