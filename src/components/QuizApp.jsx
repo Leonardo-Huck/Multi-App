@@ -117,7 +117,6 @@ const QuizApp = () => {
 
   const handleAnswer = (answer) => {
     if (answer === questions[currentQuestion].answer) {
-
       setScore(score + 1);
     }
 
