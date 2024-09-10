@@ -1,4 +1,3 @@
-// Importa hooks e componentes do React e bibliotecas externas.
 import { useState, useEffect } from "react";
 import {
   Route,
@@ -30,7 +29,6 @@ import Login from "./components/Login";
 import "./App.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-// Estiliza o contêiner principal do aplicativo.
 const AppContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -39,7 +37,6 @@ const AppContainer = styled.div`
   background-color: #f0f0f0;
 `;
 
-// Estiliza o conteúdo principal do aplicativo.
 const MainContent = styled.div`
   flex-grow: 1;
   display: flex;
@@ -51,7 +48,6 @@ const MainContent = styled.div`
   overflow: scroll;
 `;
 
-// Estiliza o contêiner do carrossel.
 const CarouselContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -65,7 +61,6 @@ const CarouselContainer = styled.div`
   padding: 20px;
 `;
 
-// Estiliza a barra de navegação.
 const NavBar = styled.div`
   width: 240px;
   background-color: #2c3e50;
@@ -88,7 +83,6 @@ const NavBar = styled.div`
   }
 `;
 
-// Estiliza o botão de alternância da barra de navegação.
 const NavBarToggle = styled.div`
   display: none;
   position: absolute;
@@ -102,7 +96,7 @@ const NavBarToggle = styled.div`
   }
 `;
 
-// Estiliza os links na barra de navegação.
+
 const StyledLink = styled(Link)`
   color: white;
   text-decoration: none;
@@ -118,7 +112,7 @@ const StyledLink = styled(Link)`
   }
 `;
 
-// Estiliza o rodapé do aplicativo.
+
 const Footer = styled.div`
   width: 100%;
   background-color: #2c3e50;
@@ -135,7 +129,6 @@ const Footer = styled.div`
   }
 `;
 
-// Estiliza os itens individuais do carrossel.
 const CarouselItem = styled.div`
   display: flex;
   flex-direction: column;
@@ -177,7 +170,6 @@ const CarouselItem = styled.div`
   }
 `;
 
-// Estiliza o botão de retorno.
 const ReturnButton = styled.button`
   position: absolute;
   top: 80%;
@@ -195,7 +187,7 @@ const ReturnButton = styled.button`
   }
 `;
 
-// Estiliza o carrossel personalizado.
+
 const CustomCarousel = styled(Carousel)`
   width: 100%;
   .carousel-status {
@@ -203,7 +195,6 @@ const CustomCarousel = styled(Carousel)`
   }
 `;
 
-// Define o componente principal do aplicativo.
 const App = () => {
   // Cria estados para autenticação, visibilidade da barra de navegação, componente atual, e índice do carrossel.
   const [isAuthenticated, setIsAuthenticated] = useState(false);

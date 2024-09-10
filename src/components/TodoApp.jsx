@@ -6,7 +6,7 @@ import axios from 'axios';
 import styled from 'styled-components';
 
 // Define a URL da API que será usada para obter, adicionar, editar e excluir tarefas.
-const API_URL = 'http://localhost:5000/tasks';
+const API_URL = 'https://api.todoist.com/rest/v2/tasks';
 
 // Cria um componente estilizado chamado Container usando styled-components.
 // Esse componente estiliza uma <div> com flexbox para centralizar o conteúdo e adicionar padding, bordas e sombras.
